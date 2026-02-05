@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <html class="scroll-smooth"></html>
     <title>Document</title>
 </head>
 
@@ -24,9 +25,9 @@
                 </div>
                 <nav class="hidden md:block">
                     <ul class="list-none flex justify-center gap-8 items-center">
-                        <li><a href="" class="text-lg text-slate-950">FEATURES</a></li>
-                        <li><a href="" class="text-lg text-slate-950">PRINCING</a></li>
-                        <li><a href="" class="text-lg text-slate-950">CONTACT</a></li>
+                        <li><a href="#Features" class="text-lg text-slate-950">FEATURES</a></li>
+                        <li><a href="#Princing" class="text-lg text-slate-950">PRINCING</a></li>
+                        <li><a href="#Contact" class="text-lg text-slate-950">CONTACT</a></li>
                         <div>
                             <button type="submit"
                                 class="w-full py-3 px-6 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg transition duration-200 ease-in-out shadow-lg">
@@ -78,7 +79,7 @@
             <div class="md:w-2/6 bg-sky-800 h-64 rounded-bl-[80px] rounded-tl-[80px] absolute top-96 right-0 z-0"></div>
         </section>
         <!-- ........................................section1.................................  -->
-        <section class="bg-slate-50 mt-8 py-16 relative z-10">
+        <section class="bg-slate-50 mt-8 py-16 relative z-10" id="Features">
             <div class="container mx-auto">
                 <div class="text-center p-4">
                     <h2 class="text-4xl text-black font-semibold">Features</h2>
@@ -175,7 +176,7 @@
             <div class="md:w-1/4 bg-sky-800 h-64  rounded-br-[80px] absolute top-280 left-0 -z-10"></div>
         </section>
         <!-- ...............................section2..........................................  -->
-        <section class="mt-8">
+        <section class="mt-8" id="Princing">
             <div class="text-center p-4">
                 <h2 class="text-4xl text-black font-semibold">Download the extension</h2>
                 <p class="text-lg font-thin py-4">
@@ -266,7 +267,7 @@
             </div>
         </section>
         <!-- ........................section 4.................................................... -->
-        <section class="mt-8 p-4 bg-cyan-700 w-full">
+        <section class="mt-8 p-16 bg-cyan-700 w-full" id="Contact">
             <div class="max-w-2xl mx-auto">
                 <div class="flex justify-between items-center flex-col gap-8 text-center">
                     <div>
@@ -277,7 +278,9 @@
                             <form action="" class="flex justify-between items-center gap-4 flex-col md:flex-row">
                                 <input type="email" name="" id="email" placeholder="Enter your email address"
                                     class="w-full bg-white p-4 rounded-xl md:flex-1">
-                                <button type="submit" class="w-full p-4 bg-red-600 text-white font-semibold rounded-xl md:w-auto">Contact us</button>
+                                <button type="submit"
+                                    class="w-full p-4 bg-red-600 text-white font-semibold rounded-xl md:w-auto">Contact
+                                    us</button>
                             </form>
                         </div>
                     </div>
@@ -285,6 +288,29 @@
             </div>
         </section>
     </main>
+    <!-- ...............................................footer................................... -->
+    <footer class=" bg-slate-950 p-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center flex-col gap-8 p-8 md:flex-row">
+                <div>
+                    <img src="./assets/logo-bookmark-white.png" alt="">
+                </div>
+
+                <nav>
+                    <ul class="flex justify-center items-center gap-4">
+                        <li><a href="" class="text-white">FEATURES</a></li>
+                        <li><a href="" class="text-white">PRINCING</a></li>
+                        <li><a href="" class="text-white">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="flex justify-center items-center gap-4">
+                    <i class="fa-brands fa-facebook text-white text-xl"></i>
+                    <i class="fa-brands fa-twitter text-white text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
